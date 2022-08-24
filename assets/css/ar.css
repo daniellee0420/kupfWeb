@@ -1,0 +1,7 @@
+@font-face {
+  font-family: Cairo-Regular;
+  src: url('../fonts/Cairo-Regular.ttf');
+}
+* {
+  font-family: Cairo-Regular !important;
+}
