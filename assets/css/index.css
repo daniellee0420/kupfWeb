@@ -13,17 +13,21 @@
   display: none;
   cursor: pointer;
 }
-.cp{
+
+.cp {
   cursor: pointer;
 }
+
 .h100Vh {
   height: 100vh;
 }
+
 .formGroupCheckbox label {
   position: relative;
   cursor: pointer;
 }
-.divPos{
+
+.divPos {
   position: absolute;
   background: #00000075;
   top: 0;
@@ -35,30 +39,37 @@
   padding-bottom: 15px;
   padding-left: 15px;
 }
-.radius-12{
+
+.radius-12 {
   border-radius: 12px;
 }
+
 .table thead th {
   vertical-align: bottom;
   border: 1px solid #BD9B60 !important;
 }
+
 .table thead td {
   vertical-align: bottom !important;
   border: 1px solid #BD9B60;
 }
+
 .table td, .table th {
   padding: 0.75rem;
   vertical-align: top;
   vertical-align: middle !important;
   border: 1px solid #BD9B60 !important;
 }
+
 table {
   text-align: center;
 }
+
 footer {
   background-color: #f9f2e7;
 }
-.cl-183028{
+
+.cl-183028 {
   color: #183028;
 }
 
@@ -69,12 +80,12 @@ footer {
   margin: 0;
   padding: 10px 10px 10px 15px;
   display: block;
-  width:100%;
+  width: 100%;
   cursor: pointer;
 }
 
 .answers {
-  font-weight:300;
+  font-weight: 300;
   background: #f2f2f2;
   padding: 0px 15px;
   margin: 0px 0;
@@ -89,14 +100,14 @@ footer {
   transition: .7s ease;
 }
 
-.questions:checked ~ .answers{
+.questions:checked~.answers {
   height: auto;
   opacity: 1;
   padding: 15px;
 }
 
 .plus {
-  color:#fff;
+  color: #fff;
   position: absolute;
   margin-left: 10px;
   margin-top: 5px;
@@ -104,7 +115,7 @@ footer {
   right: 15px;
   font-size: 2em;
   line-height: 100%;
-  -webkit-user-select: none;    
+  -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
   -o-user-select: none;
@@ -115,7 +126,7 @@ footer {
   transition: .3s ease;
 }
 
-.questions:checked ~ .plus {
+.questions:checked~.plus {
   -webkit-transform: rotate(45deg);
   -moz-transform: rotate(45deg);
   -o-transform: rotate(45deg);
@@ -125,6 +136,7 @@ footer {
 .questions {
   display: none;
 }
+
 .formGroupCheckbox label:before {
   content: '';
   -webkit-appearance: none;
@@ -299,7 +311,8 @@ a {
   margin: 5px auto;
   -webkit-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
-  
+  background: #fff;
+
 }
 
 .overlayPosition {
@@ -352,10 +365,12 @@ header {
   font-weight: 500;
   color: #482ff7;
 }
-.height{
+
+.height {
 
   height: 100vh;
 }
+
 @media only screen and (max-width: 900px) {
   .nav-menu {
     display: block;
@@ -371,6 +386,12 @@ header {
     text-align: center;
     transition: 0.3s;
     box-shadow: 0 10px 27px rgba(0, 0, 0, 0.05);
+  }
+
+  nav {
+    width: 100% !important;
+    margin: 0 auto;
+    padding: 50px 0;
   }
 
   .textSmCenter {
@@ -460,9 +481,14 @@ header {
     font-size: 14px;
     color: #C2C8C6;
   }
+
   .h100Vh {
     height: auto !important;
   }
+  .dropdown1 {
+    position: relative;
+    display: block !important;
+}
 }
 
 .carousel-control-next-icon {
@@ -504,6 +530,7 @@ nav.stroke ul li a,
 nav.fill ul li a {
   position: relative;
 }
+
 nav.stroke ul li a:after,
 nav.fill ul li a:after {
   position: absolute;
@@ -517,6 +544,7 @@ nav.fill ul li a:after {
   background: #aaa;
   height: 1px;
 }
+
 nav.stroke ul li a:hover:after {
   width: 100%;
 }
@@ -531,10 +559,12 @@ nav.fill ul li a:after {
   margin: 0;
   opacity: 0;
 }
+
 nav.fill ul li a:hover {
   color: #fff;
   z-index: 1;
 }
+
 nav.fill ul li a:hover:after {
   z-index: -10;
   animation: fill 1s forwards;
@@ -542,6 +572,7 @@ nav.fill ul li a:hover:after {
   -moz-animation: fill 1s forwards;
   opacity: 1;
 }
+
 nav {
   width: 80%;
   margin: 0 auto;
@@ -549,13 +580,16 @@ nav {
   padding: 50px 0;
 
 }
+
 nav ul {
   list-style: none;
   text-align: center;
 }
+
 nav ul li {
   display: inline-block;
 }
+
 nav ul li a {
   display: block;
   padding: 15px;
@@ -565,14 +599,17 @@ nav ul li a {
   text-transform: uppercase;
   margin: 0 10px;
 }
+
 nav ul li a,
 nav ul li a:after,
 nav ul li a:before {
   transition: all .5s;
 }
+
 nav ul li a:hover {
   color: black;
 }
+
 .dropbtn1 {
   background-color: transparent;
   color: white;
@@ -591,9 +628,10 @@ nav ul li a:hover {
   position: absolute;
   background-color: #f1f1f1;
   min-width: 240px;
-  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
   z-index: 1;
 }
+
 /* .dropdown-content1  */
 .dropdown-content1 a {
   color: black;
@@ -604,8 +642,14 @@ nav ul li a:hover {
   font-size: 10px;
 }
 
-.dropdown-content1 a:hover {background-color: #ddd;}
+.dropdown-content1 a:hover {
+  background-color: #ddd;
+}
 
-.dropdown1:hover .dropdown-content1 {display: block;}
+.dropdown1:hover .dropdown-content1 {
+  display: block;
+}
 
-.dropdown1:hover .dropbtn1 {background-color: transparent;}
+.dropdown1:hover .dropbtn1 {
+  background-color: transparent;
+}

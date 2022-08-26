@@ -195,6 +195,29 @@
 
     <a class="weatherwidget-io" href="https://forecast7.com/ar/29d3847d98/kuwait-city/" data-label_1="KUWAIT CITY" data-label_2="WEATHER" data-theme="original" data-basecolor="#103c5d" data-highcolor="#ff5e5f" data-lowcolor="#d1dafb" >KUWAIT CITY WEATHER</a>
 <script>
+    const hamburger = document.querySelector(".hamburger");
+  const navMenu = document.querySelector(".nav-menu");
+  hamburger.addEventListener("click", mobileMenu);
+  function mobileMenu() {
+    hamburger.classList.toggle("active");
+    navMenu.classList.toggle("active");
+  }
+  function closeMenu() {
+    hamburger.classList.remove("active");
+    navMenu.classList.remove("active");
+  }
+  window.onscroll = function () { scrollFunction() };
+
+  function scrollFunction() {
+    if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) {
+      document.getElementById("navigation-menu").classList.add('sticky-top')
+      document.getElementById("navigation-menu").style.background = '#000'
+    } else {
+      document.getElementById("navigation-menu").classList.remove('sticky-top')
+      document.getElementById("navigation-menu").style.background = ''
+    }
+  }
+
 !function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src='https://weatherwidget.io/js/widget.min.js';fjs.parentNode.insertBefore(js,fjs);}}(document,'script','weatherwidget-io-js');
 </script>
   </div>
