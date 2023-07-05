@@ -21,26 +21,18 @@
         <li class="nav-item dropdown1">
           <a href="./aboutus.html" class="nav-link dropbtn1 js-anchor-link">About Us </a>
            <div class="dropdown-content1">
-           <a class="d-block text-dark" href="./aboutus.html">Establishment and development </a>
+            <a class="d-block text-dark" href="./aboutus.html">Establishment and Goals </a>
             <a class="d-block text-dark" href="./mission.html">Our vision and mission </a>
             <a class="d-block text-dark" href="./directors.html">Board of director </a>
-            <a class="d-block text-dark" href="./organization-chart.html">Exceptive department </a>
+            <a class="d-block text-dark" href="./organization-chart.html">Executive Management </a>
             <a class="d-block text-dark" href="./report.html">Annual reports</a>
           </div>
           </li>
-        <li class="nav-item dropdown1">
-          <a href="./services.html" class="nav-link dropbtn1 js-anchor-link">Our Services </a>
-           <div class="dropdown-content1">
-            <a class="d-block text-dark" href="./services.html">Interest free loan </a>
-            <a>Consumption loan</a>
-            <a>Medical loan </a>
-            <a>pilgrimage-Haji- Loan </a>
-            <a>Social Aid</a>
-            <a>Financial Aid for Death and Disability</a>
-            <a>Social and Cultured Activities</a>
-            <a>Entertainment programs and Omra trips </a>
-          </div>
-        </li>
+          <li class="nav-item dropdown1">
+            <a href="./services.html" class="nav-link dropbtn1 js-anchor-link">Our Services </a>
+            <div class="dropdown-content1" id="menuOurServices">
+            </div>
+          </li>
        <li class="nav-item dropdown1">
           <a href="./electronics.html" class="nav-link dropbtn1 js-anchor-link">Electronic Forms </a>
            <div class="dropdown-content1">
@@ -76,7 +68,7 @@
               </li>
       </ul>
       <div>
-        <a href="./ar/index.html" class="text-white">عربي</a>
+        <a href="./ar/organization-chart.html" class="text-white">عربي</a>
       </div>
       <div class="hamburger">
         <span class="bar"></span>
@@ -93,16 +85,26 @@
       </h1>
       <div class="pt-3"><button class="customButton btn-lg btn px-4">Learn More</button></div> -->
       <div class="col-lg-5 d-flex flex-column align-items-center justify-content-center">
-        <h1 class="text-white text-center">Organization Chart</h1>
+        <h1 class="text-white text-center">Executive Management</h1>
        
       </div>
     </div>
   </section>
-  <section class="mt-5 mainPadding">
-
-   
+  <section class="mt-5 mainPadding" data-aos="zoom-in">
+    <h3 class="cl-BD9B60 mt-3"><strong>Executive management</strong></h3>
+    <p class="text-justify mt-2">
+      The Social Security Fund's executive management is concerned with applying 
+      policies related to achieving the objectives for which it was established 
+      and managing its activity, coordination between the Board of Directors and 
+      its executive management in all its units, as well as effective communication 
+      with members, employees, and other official and private entities.
+      In addition to it, the tasks of planning and organizing and contributing 
+      to the development of plans, strategies and visions that contribute to the growth 
+      of the Social Security and setting the outlines of the work that must be performed 
+      and the method of its performance and assessment of potential risks.
+    </p>
   </section>
-  <section class="bg-21 mt-5 py-5 bg-21">
+  <section class="bg-21 mt-3 py-5 bg-21">
     <div class="mainPadding">
       <div class="row mx-0 align-items-center">
         <div class="col-lg-8 text-center m-auto">
@@ -147,7 +149,7 @@
         </div>
       </div>
       <div class="col-lg-4">
-        <h4 class="f cl-BD9B60">Subscriptions now to get our offeres</h4>
+        <h4 class="f cl-BD9B60">Subscribe now to get our offers</h4>
         <div class="py-3">
           <input type="text" placeholder="Email Address" class="form-control" required placeholder="Name *">
           <button class="customButton btn-lg btn w-100 mt-3 rounded-0">Subscriptions</button>
@@ -166,22 +168,18 @@
     !function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src='https://weatherwidget.io/js/widget.min.js';fjs.parentNode.insertBefore(js,fjs);}}(document,'script','weatherwidget-io-js');
     </script>
   </div>
-
-    <script>
-    
-
+  <script src="../KUPFWeb/assets/js/getPageContent.js"></script>
+    <script> 
       window.onscroll = function () { scrollFunction() };
-
-function scrollFunction() {
-  if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) {
-    document.getElementById("navigation-menu").classList.add('sticky-top')
-    document.getElementById("navigation-menu").style.background = '#000'
-  } else {
-    document.getElementById("navigation-menu").classList.remove('sticky-top')
-    document.getElementById("navigation-menu").style.background = ''
-  }
-}
-
+      function scrollFunction() {
+        if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) {
+          document.getElementById("navigation-menu").classList.add('sticky-top')
+          document.getElementById("navigation-menu").style.background = '#000'
+        } else {
+          document.getElementById("navigation-menu").classList.remove('sticky-top')
+          document.getElementById("navigation-menu").style.background = ''
+        }
+      }
     </script>
 
   <footer class="p-4 text-center bg-1 mt-4 text-white">

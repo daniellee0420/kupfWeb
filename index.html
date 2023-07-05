@@ -15,33 +15,26 @@
 <body>
   <header class="header " id="navigation-menu">
     <nav class="navbar bg-transparent stroke">
-      <a href="./index.html" class="nav-logo js-anchor-link text-white">
+      <a href="#" class="nav-logo js-anchor-link text-white" onclick="clearLocalStorage()">
         <img src="./assets/images/logo.png" height="" width="300" alt="" srcset="">
       </a>
       <ul class="nav-menu  mb-0">
         <li class="nav-item dropdown1">
           <a href="./aboutus.html" class="nav-link dropbtn1 js-anchor-link">About Us </a>
           <div class="dropdown-content1">
-            <a class="d-block text-dark" href="./aboutus.html">Establishment and development </a>
+            <a class="d-block text-dark" href="./aboutus.html">Establishment and Goals </a>
             <a class="d-block text-dark" href="./mission.html">Our vision and mission </a>
             <a class="d-block text-dark" href="./directors.html">Board of director </a>
-            <a class="d-block text-dark" href="./organization-chart.html">Exceptive department </a>
+            <a class="d-block text-dark" href="./organization-chart.html">Executive Management </a>
             <a class="d-block text-dark" href="./report.html">Annual reports</a>
+            <a class="d-block text-dark" href="./membership.html">Membership</a>
           </div>
         </li>
-        <li class="nav-item dropdown1">
+        <li class="nav-item">
           <a href="./services.html" class="nav-link dropbtn1 js-anchor-link">Our Services </a>
-          <div class="dropdown-content1">
-            <a class="d-block text-dark" href="./services.html">Interest free loan </a>
-            <a href="./consumption-loan.html">Consumption loan</a>
-            <a href="./medical-loan.html">Medical loan </a>
-            <a href="./pilgrimage-haji-loan.html">pilgrimage-Haji- Loan </a>
-            <a href="./social-aid.html">Social Aid</a>
-            <a href="./financial-aid.html">Financial Aid for Death and Disability</a>
-            <a href="./social-culture.html">Social and Cultured Activities</a>
-            <a href="./entertainment-program.html">Entertainment programs and Omra trips </a>
+          <div class="dropdown-content1" id="menuOurServices">
           </div>
-        </li>
+        </li> 
         <li class="nav-item dropdown1">
           <a href="./electronics.html" class="nav-link dropbtn1 js-anchor-link">Electronic Forms </a>
           <div class="dropdown-content1">
@@ -59,6 +52,7 @@
             <a href="./request-for-refund.html">Request for refund +ve deducted</a>
           </div>
         </li>
+        <a class="dropbtn1 offers" href="./offers.html">Offers</a>
         <li class="nav-item dropdown1">
           <a href="./contactus.html" class="nav-link dropbtn1 js-anchor-link">Contact Us </a>
           <div class="dropdown-content1">
@@ -164,6 +158,43 @@
       </button>
     </div>
   </section>
+  <section class="mt-5 mainPadding" data-aos="zoom-in">
+    <h3 class="cl-BD9B60"><strong> Introduction </strong></h3>
+    <h5 class="cl-BD9B60 mt-3">SOCIAL SECURITY FUND is a white facade for Kuwait University</h5>
+    <p class="text-justify mt-2">
+      The civilized role played by the Social security Fund to serve the employees of Kuwait University
+      has become a humanitarian and social model to achieve its mission towards solidarity and social synergy,
+      The strength and stability of the Social security Fund lies in the value of the idea and the superiority
+      of the message, which enabled it to have a greater margin for development.
+      The humanitarian project for which the fund was established has grown to a great degree, so it was natural
+      to look forward to presenting a new idea that keeps pace with the member's evolving needs and does not
+      stop at the limit of facing cases of death and health disability, as the social care provided by the
+      Social securityfund extended to the member's life and stay on top of his work. To maintain the continuity
+      of the appropriate social level for the member and his family, and this is confirmed by the figures and
+      the achievements made by the Social security Fund 's management in this aspect.
+    </p>
+  </section>
+  <section class="mt-5 mainPadding" data-aos="zoom-in">
+    <h3 class="cl-BD9B60 mt-3"><strong>Welcome Words</strong></h3>
+    <h5 class="cl-BD9B60 mt-3">We are pleased to welcome you to our website</h5>
+    <p class="text-justify mt-2">
+
+      Honesty is one of the basic values that we rely on in order to deal with our members and
+      our university environment. The information on our website provides a clear vision about the
+      Social security Fund’s mission and services, in addition to the numbers and facts related to
+      the Social security Fund’s existing and future projects and its financial performance.
+      Today, as we are in the fifth decade of our career, we are confident that the experience that
+      refined our experience and the projects and services we launched makes us an essential partner
+      in our university community in which we working in and for.
+      We have learned that in order to continue achieving long-term success, we must not only build
+      for the present, but build a solid and sustainable building that can stand the test of time and
+      the challenges it brings...
+      The credit for achieving and building our achievements goes to many success partners: the university
+      administrations, the boards of directors of the Social security Fund, our valued members, our
+      employees... We thank all of them and look forward to more support to continue our success path together...
+    </p>
+  </section>
+
   <section class="mt-5 d-flex mainPadding h100Vh">
     <div class="row mx-0 justify-content-between align-items-center" data-aos="zoom-in">
       <div class="col-lg-4">
@@ -409,9 +440,20 @@
   <footer class="p-4 text-center bg-1 mt-4 text-white">
     Copy rights for Kuwait University SSF
   </footer>
+  <script src="./assets/js/jquery-3.6.1.min.js"></script>
 </body>
 <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
 <script>
+  if (localStorage.getItem("menuItems") != null) {
+    var data = JSON.parse(localStorage.getItem('menuItems') || '{}');
+    for (i = 0; i < data.length; i++) {
+      // Append menu items...
+      if (data[i].webEnglish != null) {
+        $('#menuOurServices').append('<a href="javascript:void(0)" id=' + data[i].serviceID + ' class="serviceMenuItems">' + data[i].webEnglish + ' </a>')
+      }
+    }
+  }
+
   AOS.init({
     throttleDelay: 99,
     disable: false,
@@ -431,10 +473,29 @@
 
   });
 </script>
-<script src="./assets/bootstrap/bts4jq.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
-<script src="./assets/bootstrap/bts4.js"></script>
+
 <script>
+  $('.serviceMenuItems').click(function () {
+    var serviceId = $(this).attr('id');
+    var data = JSON.parse(localStorage.getItem('menuItems') || '{}');
+    var result = data.find(x => x.serviceID == serviceId);
+    for (i = 0; i < result.length; i++) {
+      $('#temp').append(result[i].englishHTML)
+    }
+  })
+  function clearLocalStorage() {
+    localStorage.clear();
+    $.ajax({
+      url: "https://kupfapi.erp53.com/api/Common/GetServicesForWebMenu",
+      type: 'GET',
+      contentType: 'application/json; charset=uft-8',
+      dataType: 'json',
+      success: function (result) {
+        window.localStorage.setItem('menuItems', JSON.stringify(result));
+        window.location.reload();
+      }
+    });
+  }
   const hamburger = document.querySelector(".hamburger");
   const navMenu = document.querySelector(".nav-menu");
   hamburger.addEventListener("click", mobileMenu);

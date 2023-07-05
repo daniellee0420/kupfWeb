@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ar">
 
 <head>
   <meta charset="UTF-8">
@@ -47,69 +47,71 @@
 <body>
   <header class="header " id="navigation-menu" dir="rtl">
     <nav class="navbar bg-transparent stroke">
-      <a href="./index.html" class="nav-logo js-anchor-link text-white">
+      <a href="./index.html" class="nav-logo js-anchor-link text-white" onclick="clearLocalStorage()">
         <img src="../assets/images/logo.png" height="" width="300" alt="" srcset="">
       </a>
       <ul class="nav-menu  mb-0">
         <li class="nav-item dropdown1">
           <a href="./aboutus.html" class="nav-link dropbtn1 js-anchor-link">عن الصندوق </a>
           <div class="dropdown-content1">
-            <a class="d-block text-dark" href="./aboutus.html"> النشأة والتطور </a>
-            <a class="d-block text-dark" href="./mission.html"> رؤيتنا ورسالتنا </a>
-            <a class="d-block text-dark" href="./directors.html"> مجلس الإدارة </a>
-            <a class="d-block text-dark" href="./organization-chart.html"> الإدارة التنفيذية .. </a>
-            <a class="d-block text-dark" href="./report.html"> التقارير السنوية </a>
+            <a class="d-block text-dark arFormat" href="./aboutus.html"> التأسيس والأهداف</a>
+            <a class="d-block text-dark arFormat" href="./mission.html"> رؤيتنا ورسالتنا </a>
+            <a class="d-block text-dark arFormat" href="./directors.html"> مجلس الإدارة </a>
+            <a class="d-block text-dark arFormat" href="./organization-chart.html"> الإدارة التنفيذية .. </a>
+            <a class="d-block text-dark arFormat" href="./report.html"> التقارير السنوية </a>
+            <a class="d-block text-dark arFormat" href="./membership.html">العضوية</a>
           </div>
         </li>
         <li class="nav-item dropdown1">
           <a href="./services.html" class="nav-link dropbtn1 js-anchor-link">خدماتنا </a>
-          <div class="dropdown-content1">
-            <a href="./services.html"> قرض بدون فوائد </a>
-            <a href="./consumption-loan.html"> القرض الاستهلاكي </a>
-            <a href="./medical-loan.html"> قرض العلاج الطبي والتأمين الصحي </a>
-            <a href="./pilgrimage-haji-loan.html"> قرض ومنحة الحج السنوية </a>
-            <a href="./social-aid.html"> المساعدات الاجتماعية </a>
-            <a href="./financial-aid.html"></a>> العون المالي (الوفاة/العجز الصحي</a>
-            <a href="./social-culture.html"> الأنشطة الاجتماعية والثقافية .. </a>
-            <a href="./entertainment-program.html"> البرامج الترفيهية ورحلات العمرة </a>
+          <div class="dropdown-content1" id="menuOurServices">
+            <!-- <a class="d-block text-dark arFormat" href="./services.html"> القرض الاجتماعي الحسن </a>
+            <a class="d-block text-dark arFormat" href="./consumption-loan.html"> القرض الاستهلاكي </a>
+            <a class="d-block text-dark arFormat" href="./medical-loan.html"> قرض العلاج والخدمات الطبية </a>
+            <a class="d-block text-dark arFormat" href="./pilgrimage-haji-loan.html"> قرض ومنحة الحج </a>
+            <a class="d-block text-dark arFormat" href="./financial-aid.html"> العون المالي (الوفاة/العجز الصحي</a>
+            <a class="d-block text-dark arFormat" href="./social-culture.html"> الانشطة الاجتماعية والترفيهية الداخلية</a>
+            <a class="d-block text-dark arFormat" href="./external-tourist-trips-and-umrah.html">الرحلات السياحية الخارجية ورحلات العمرة </a>
+            <a class="d-block text-dark arFormat" href="./annual-medical-insurance-service.html">خدمات التأمين الصحي </a>
+            <a class="d-block text-dark arFormat" href="./miscellaneous-services-basket.html">خدمات متنوعة  </a> -->
           </div>
         </li>
         <li class="nav-item dropdown1">
           <a href="./electronics.html" class="nav-link dropbtn1 js-anchor-link">النماذج الالكترونية </a>
-          <div class="dropdown-content1">
-            <a class="d-block text-dark" href="./membership.html"> طلب إنتساب (عضوية جديدة) </a>
-            <a href="./re-subscribing.html"> طلب إعادة إنتساب </a>
-            <a href="./withdraw-request.html"> طلب انسحاب </a>
-            <a href="./request-of-home-concern.html"> طلب شهادة لمن يهمه الأمر </a>
-            <a href="./membership-certificate.html"> شهادة إنتساب وخصم اشتراك شهري . </a>
-            <a href="./loan-certificate.html"> شهادة مديونية قرض </a>
-            <a href="./loan-paid-certificate.html"> شهادة سداد مديونية قرض وبراءة ذمة </a>
-            <a href="./statement-of-collected.html"> كشف حساب للاشتراكات المدفوعة </a>
-            <a href="./statement-for-loans.html"> كشف حساب بالقروض المدينة </a>
-            <a href="./request-for-changing.html"> طلب تعديل مستفيدين </a>
-            <a href="./request-for-paying.html"> طلب صرف أمانات محجوزة </a>
-            <a href="./request-for-refund.html"> طلب رد خصم بالزيادة </a>
+          <div class="dropdown-content1 arFormat">
+            <a class="d-block text-dark arFormat" href="./membership.html"> طلب إنتساب (عضوية جديدة) </a>
+            <a class="d-block text-dark arFormat" href="./re-subscribing.html"> طلب إعادة إنتساب </a>
+            <a class="d-block text-dark arFormat" href="./withdraw-request.html"> طلب انسحاب </a>
+            <a class="d-block text-dark arFormat" href="./request-of-home-concern.html"> طلب شهادة لمن يهمه الأمر </a>
+            <a class="d-block text-dark arFormat" href="./membership-certificate.html"> شهادة إنتساب وخصم اشتراك شهري . </a>
+            <a class="d-block text-dark arFormat" href="./loan-certificate.html"> شهادة مديونية قرض </a>
+            <a class="d-block text-dark arFormat" href="./loan-paid-certificate.html"> شهادة سداد مديونية قرض وبراءة ذمة </a>
+            <a class="d-block text-dark arFormat" href="./statement-of-collected.html"> كشف حساب للاشتراكات المدفوعة </a>
+            <a class="d-block text-dark arFormat" href="./statement-for-loans.html"> كشف حساب بالقروض المدينة </a>
+            <a class="d-block text-dark arFormat" href="./request-for-changing.html"> طلب تعديل مستفيدين </a>
+            <a class="d-block text-dark arFormat" href="./request-for-paying.html"> طلب صرف أمانات محجوزة </a>
+            <a class="d-block text-dark arFormat" href="./request-for-refund.html"> طلب رد خصم بالزيادة </a>
           </div>
         </li>
         <li class="nav-item dropdown1">
           <a href="./contactus.html" class="nav-link dropbtn1 js-anchor-link">اخبار الصندوق </a>
           <div class="dropdown-content1">
-            <a href="./our-latest-news-offers.html"> آخر الأخبار والعروض </a>
-            <a href="./journals.html"> المقابلات الصحفية </a>
-            <a href="./literatures.html"> المنشورات </a>
+            <a class="d-block text-dark arFormat" href="./our-latest-news-offers.html"> آخر الأخبار والعروض </a>
+            <a class="d-block text-dark arFormat" href="./journals.html"> المقابلات الصحفية </a>
+            <a class="d-block text-dark arFormat" href="./literatures.html"> المنشورات </a>
           </div>
         </li>
         <li class="nav-item dropdown1 dropdown1">
           <a href="#" class="nav-link js-anchor-link dropbtn1">آخرى </a>
           <div class="dropdown-content1">
-            <a href="./disclaimer-of-liability.html"> اخلاء طرف من المسئولية </a>
-            <a href="./privacy.html"> إقرار الخصوصية </a>
-            <a href="./themap-tous.html"> خريطة الموقع </a>
+            <a class="d-block text-dark arFormat" href="./disclaimer-of-liability.html"> اخلاء طرف من المسئولية </a>
+            <a class="d-block text-dark arFormat" href="./privacy.html"> إقرار الخصوصية </a>
+            <a class="d-block text-dark arFormat" href="./themap-tous.html"> خريطة الموقع </a>
           </div>
         </li>
       </ul>
       <div>
-        <a href="../index.html" class="text-white">ENG</a>
+        <a href="../consumption-loan.html" class="text-white">ENG</a>
       </div>
       <div class="hamburger">
         <span class="bar"></span>
@@ -195,6 +197,28 @@
         <span class="sr-only">Next</span>
       </button>
     </div>
+  </section>  
+  <section class="mt-5 mainPadding" data-aos="zoom-in">
+    <h3 class="cl-BD9B60 text-right ">الافتتاحية </h3>
+    <h5 class="cl-BD9B60 mt-2 text-right ">الصندوق واجهة بيضاء لجامعة الكويت </h5>
+    <p class="text-justify mt-2 text-right">
+      إن الدور الحضاري الذي يؤديه الصندوق لخدمة موظفي جامعة الكويت بات نموذجا إنسانيا واجتماعيا لتحقيق رسالته نحو
+      التكافل والتآزر الاجتماعي . أن قوة الصندوق واستقراره تكمن بقيمة الفكرة وسمو الرسالة الأمر الذي مكن له هامش أكبر
+      للتطوير . أن المشروع الانساني الذي قام من اجله الصندوق قد تعاظم إلى درجة كبيرة فكان من الطبيعي أن نتطلع إلى تقديم
+      فكر جديد يواكب حاجات العضو المتطورة ولا يقف عند حد مواجهة حالات الوفاة والعجز الصحي ، حيث امتدت الرعاية الاجتماعية
+      التي يقدمها الصندوق حال حياة العضو وبقائه على رأس عمله للحفاظ على استمرار المستوى الاجتماعي اللائق بالعضو وأسرته
+      وهذا ما تؤكده الارقام والانجازات التي حققتها إدارة الصندوق في هذا الجانب
+    </p>
+  </section>
+  <section class="mt-5 mainPadding" data-aos="zoom-in">
+    <h3 class="cl-BD9B60 text-right ">نرحب بكم  </h3>
+    <h5 class="cl-BD9B60 mt-2 text-right"> يسعدنا ان نرحب بكم في موقعنا الالكتروني </h5>
+    <p class="text-justify mt-2 text-right">
+      الأمانة هي واحدة من القيم الأساسية التي نعتمد عليها من أجل التعامل مع أعضائنا ومحيطنا الجامعي..توفرالمعلوماتالموجودةعلىموقعنارؤيةواضحةحولرسالةالصندوقوخدماتهإضافةالىالأرقاموالوقائعالمتعلقةبمشاريعالصندوقالقائمةوالمستقبليةوأدائهالمالي..
+اليومونحنفيالعقدالخامسمنمسيرتنافإنناواثقونمنانالخبرةالتيصقلتتجربتناوماأطلقناهمنمشاريعوخدماتيجعلناشريكًاأساسيًافيمجتمعناالجامعيالذينعملفيمحيطهومنأجله ... لقدتعلمناانهمناجلمواصلةتحقيقالنجاحعلىالمدىالطويليجبألانبنيللحاضرفقط، وإنمانؤسسبناءمتينومستداميمكنانيصمدأماماختبارالزمنومايحملهمنتحديات ...
+يعودالفضلفيتحقيقوبناءانجازاتناالىالعديدمنشركاءالنجاح: الإداراتالجامعية، مجالسإداراتالصندوق، أعضائناالكرام، موظفينا ... نتوجهبالشكرالىهؤلاءجميعًاونتطلعالىالمزيدمنالدعملمواصلةمسيرةنجاحنامعًا ... 
+
+    </p>
   </section>
   <section class="mt-5 d-flex mainPadding h100Vh">
     <div class="row mx-0 justify-content-between align-items-center" dir="rtl" data-aos="zoom-in">
@@ -438,6 +462,7 @@
   <footer class="p-4 text-center bg-1 mt-4 text-white">
     حقوق النشر ٢٠٢٢ صندوق الضمان الاجتماعي للعاملين بجامعة الكويت 
   </footer>
+  <script src="../assets/js/jquery-3.6.1.min.js"></script>
 </body>
 <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
 <script>
@@ -461,9 +486,24 @@
   });
 </script>
 <script src="../assets/bootstrap/bts4jq.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
 <script src="../assets/bootstrap/bts4.js"></script>
+<script src="../assets/js/getArabicPageContent.js"></script>
 <script>
+  function clearLocalStorage(){
+    if (localStorage.getItem("menuItems") != null) {
+      localStorage.clear();
+        $.ajax({
+                  url: "https://kupfapi.erp53.com/api/Common/GetServicesForWebMenu",
+                  type: 'GET',
+                  contentType: 'application/json; charset=uft-8',
+                  dataType: 'json',
+                  success: function (result) {
+                    window.localStorage.setItem('menuItems', JSON.stringify(result));
+                    window.location.reload();
+                  }
+                });
+      }
+  }
   const hamburger = document.querySelector(".hamburger");
   const navMenu = document.querySelector(".nav-menu");
   hamburger.addEventListener("click", mobileMenu);

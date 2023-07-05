@@ -356,10 +356,14 @@ header {
   margin: 0px !important;
 }
 
+
 .nav-link:hover {
   color: #fff;
 }
-
+.arFormat{
+  font-size: 13px !important;
+    font-weight: 400;
+}
 .nav-logo {
   font-size: 2.1rem;
   font-weight: 500;
@@ -652,4 +656,7 @@ nav ul li a:hover {
 
 .dropdown1:hover .dropbtn1 {
   background-color: transparent;
+}
+.offers:hover{
+  color:#C2C8C6
 }
